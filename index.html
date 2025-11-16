@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FixIt Pro • Tech Repair</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">FixIt Pros</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <button class="btn btn-outline-secondary theme-btn ms-3" onclick="toggleTheme()" aria-label="Toggle theme">
+        <span id="theme-icon">🌙</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<section class="p-5 text-center text-light hero d-flex align-items-center" style="min-height: 75vh;">
+  <div class="container">
+    <h1 class="fw-bold display-4 mb-3">Fast & Reliable Tech Repair</h1>
+    <p class="hero-subheading lead mb-4">Phones • Laptops • Tablets • Consoles</p>
+    <a href="#contact" class="btn btn-primary btn-lg mt-3">Get a Free Quote</a>
+  </div>
+</section>
+
+<section id="services" class="p-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-5">Our Services</h2>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card p-4 h-100">
+          <div class="display-4 mb-3">📱</div>
+          <h5 class="fw-bold">Screen Replacement</h5>
+          <p class="text-muted">Quick & high-quality replacements for all major brands.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-4 h-100 border-primary">
+          <div class="display-4 mb-3">🔋</div>
+          <h5 class="fw-bold text-primary">Battery Replacement</h5>
+          <p class="text-muted">Extend your device's life instantly with genuine parts.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-4 h-100">
+          <div class="display-4 mb-3">🩺</div>
+          <h5 class="fw-bold">Diagnostics</h5>
+          <p class="text-muted">Full device scan & comprehensive repair report.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 mt-2">
+      <div class="col-md-4">
+        <div class="card p-4 h-100">
+          <div class="display-4 mb-3">💧</div>
+          <h5 class="fw-bold">Water Damage</h5>
+          <p class="text-muted">Advanced liquid damage repair and restoration.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-4 h-100">
+          <div class="display-4 mb-3">⚙️</div>
+          <h5 class="fw-bold">Software Issues</h5>
+          <p class="text-muted">Virus removal, OS installation, and optimization.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-4 h-100">
+          <div class="display-4 mb-3">💾</div>
+          <h5 class="fw-bold">Data Recovery</h5>
+          <p class="text-muted">Recover your important files and photos safely.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" class="p-5 bg-dark-section">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-5">Transparent Pricing</h2>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card p-4 h-100">
+          <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f50d.svg" alt="Diagnostics" class="mb-3" style="width: 60px; height: 60px;">
+          <h4 class="fw-normal">Diagnostics</h4>
+          <h2 class="fw-bold display-5 my-3">KSh 500</h2>
+          <p class="mb-0">Free if you proceed with repair</p>
+          <hr class="my-3">
+          <ul class="list-unstyled text-start">
+            <li>✓ Complete device inspection</li>
+            <li>✓ Detailed repair estimate</li>
+            <li>✓ 30-minute turnaround</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-4 h-100">
+          <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4f1.svg" alt="Screen Repair" class="mb-3" style="width: 60px; height: 60px;">
+          <h4 class="fw-normal">Screen Repair</h4>
+          <h2 class="fw-bold display-5 my-3">KSh 3,500+</h2>
+          <p class="mb-0">Starting price, varies by model</p>
+          <hr class="my-3">
+          <ul class="list-unstyled text-start">
+            <li>✓ OEM-quality parts</li>
+            <li>✓ Same-day service</li>
+            <li>✓ 90-day warranty</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-4 h-100">
+          <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f50b.svg" alt="Battery Replacement" class="mb-3" style="width: 60px; height: 60px;">
+          <h4 class="fw-normal">Battery Swap</h4>
+          <h2 class="fw-bold display-5 my-3">KSh 2,500+</h2>
+          <p class="mb-0">Starting price, varies by model</p>
+          <hr class="my-3">
+          <ul class="list-unstyled text-start">
+            <li>✓ High-capacity batteries</li>
+            <li>✓ 1-hour service</li>
+            <li>✓ 6-month warranty</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="p-5">
+  <div class="container text-center">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h2 class="fw-bold mb-4">About FixIt Pro</h2>
+        <p class="fs-5 text-muted mb-4">
+          We're a team of certified technicians with over 10 years of combined experience 
+          in device repair. From cracked screens to water damage, we've seen it all—and 
+          fixed it all.
+        </p>
+        <p class="fs-5 text-muted">
+          Our mission is simple: provide fast, affordable, and professional repairs without 
+          the hassle. No appointments needed. Walk in, get fixed, walk out happy.
+        </p>
+        <div class="row g-4 mt-4">
+          <div class="col-md-4">
+            <h3 class="fw-bold text-primary">5000+</h3>
+            <p class="text-muted">Repairs Completed</p>
+          </div>
+          <div class="col-md-4">
+            <h3 class="fw-bold text-primary">4.9★</h3>
+            <p class="text-muted">Average Rating</p>
+          </div>
+          <div class="col-md-4">
+            <h3 class="fw-bold text-primary">2hr</h3>
+            <p class="text-muted">Average Turnaround</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="p-5 bg-dark-section">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">Any Inquiries?</h2>
+
+    <div class="success-message alert alert-success mx-auto" style="max-width: 600px;" role="alert">
+      <h5 class="alert-heading">✓ Message Sent!</h5>
+      <p class="mb-0">We'll get back to you within 24 hours.</p>
+    </div>
+
+    <form id="contactForm" class="card p-4 p-md-5 mx-auto" style="max-width: 600px;" novalidate>
+      <div class="mb-3">
+        <label for="nameInput" class="form-label">Name *</label>
+        <input type="text" id="nameInput" class="form-control" placeholder="Your Name" required>
+        <div class="invalid-feedback">Please enter your name.</div>
+      </div>
+      
+      <div class="mb-3">
+        <label for="contactInput" class="form-label">Phone or Email *</label>
+        <input type="text" id="contactInput" class="form-control" placeholder="How we can reach you" required>
+        <div class="invalid-feedback">Please provide your contact info.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="deviceSelect" class="form-label">Device Type *</label>
+        <select id="deviceSelect" class="form-select" required>
+          <option value="">Select device...</option>
+          <option value="phone">Phone</option>
+          <option value="laptop">Laptop</option>
+          <option value="tablet">Tablet</option>
+          <option value="console">Gaming Console</option>
+          <option value="other">Other</option>
+        </select>
+        <div class="invalid-feedback">Please select a device type.</div>
+      </div>
+      
+      <div class="mb-3">
+        <label for="issueTextarea" class="form-label">What's the issue? *</label>
+        <textarea id="issueTextarea" class="form-control" rows="4" placeholder="e.g., 'My iPhone 12 screen is cracked'" required></textarea>
+        <div class="invalid-feedback">Please describe the issue.</div>
+      </div>
+      
+      <button type="submit" class="btn btn-primary w-100 btn-lg">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer class="text-center p-4">
+  <div class="container">
+    <div class="social-icons mb-3">
+      <a href="https://twitter.com/fixitpro" target="_blank" aria-label="Twitter">
+        <i class="bi bi-twitter-x"></i>
+      </a>
+      <a href="https://linkedin.com/company/fixitpro" target="_blank" aria-label="LinkedIn">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://instagram.com/fixitpro" target="_blank" aria-label="Instagram">
+        <i class="bi bi-instagram"></i>
+      </a>
+    </div>
+    <p class="mb-2">© 2025 FixIt Pro • Fast & Reliable Tech Repair</p>
+    <p class="text-muted small">Tech Street, Nairobi • +(254) 123-4567 • info@fixitpro.com</p>
+  </div>
+</footer>
+
+<script>
+  // Theme toggle with icon change
+  function toggleTheme() {
+    document.body.classList.toggle("light");
+    const icon = document.getElementById("theme-icon");
+    
+    if (document.body.classList.contains("light")) {
+      icon.textContent = "☀️";
+    } else {
+      icon.textContent = "🌙";
+    }
+  }
+
+  // Form validation and submission
+  const form = document.getElementById("contactForm");
+  const successMessage = document.querySelector(".success-message");
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    if (!form.checkValidity()) {
+      event.stopPropagation();
+      form.classList.add("was-validated");
+    } else {
+      // Show success message
+      successMessage.style.display = "block";
+      form.style.display = "none";
+      
+      // Scroll to success message
+      successMessage.scrollIntoView({ behavior: "smooth", block: "center" });
+      
+      // Reset after 3 seconds
+      setTimeout(() => {
+        form.reset();
+        form.classList.remove("was-validated");
+        successMessage.style.display = "none";
+        form.style.display = "block";
+      }, 3000);
+    }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

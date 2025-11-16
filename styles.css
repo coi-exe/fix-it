@@ -1,0 +1,169 @@
+ /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Neon Theme */
+    :root {
+      --neon-blue: #00aaff;
+      --neon-blue-rgb: 0, 170, 255;
+      --dark-bg: #111;
+      --dark-card: #1c1c1c;
+      --bs-primary: var(--neon-blue);
+      --bs-primary-rgb: var(--neon-blue-rgb);
+      --bs-body-bg: var(--dark-bg);
+      --bs-body-color: #eee;
+    }
+
+    /* Light mode */
+    body.light {
+      --bs-body-bg: #f8f9fa;
+      --bs-body-color: #212529;
+    }
+    
+    .navbar {
+      background: var(--dark-card) !important;
+      border-bottom: 1px solid #333;
+    }
+    body.light .navbar {
+      background: #fff !important;
+      border-bottom: 1px solid #eee;
+    }
+
+    /* Theme toggle button */
+    .theme-btn {
+      border: 1px solid var(--neon-blue);
+      color: var(--neon-blue);
+      transition: all 0.3s ease;
+    }
+    .theme-btn:hover {
+      background: var(--neon-blue);
+      color: #000;
+      box-shadow: 0 0 15px rgba(var(--neon-blue-rgb), 0.5);
+    }
+
+    /*Gloow Effect*/
+    .card {
+      background: var(--dark-card);
+      border: 1px solid #333;
+      box-shadow: 0 0 15px rgba(var(--neon-blue-rgb), 0.2);
+      transition: all 0.3s ease;
+    }
+    body.light .card {
+      background: #fff;
+      border: 1px solid #eee;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(var(--neon-blue-rgb), 0.5);
+    }
+    body.light .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(var(--neon-blue-rgb), 0.3);
+    }
+
+    /* Make the button glow */
+    .btn-primary {
+       box-shadow: 0 0 20px rgba(var(--neon-blue-rgb), 0.6);
+       transition: all 0.3s ease;
+    }
+    .btn-primary:hover {
+      box-shadow: 0 0 30px rgba(var(--neon-blue-rgb), 0.8);
+    }
+    
+    /* Hero section styling */
+    .hero {
+      background: linear-gradient(135deg, #000 0%, #1a1a2e 100%);
+      border-bottom: 2px solid var(--neon-blue);
+    }
+    .hero-subheading {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.9rem;
+      color: var(--neon-blue);
+    }
+
+    /* Card text colors */
+    .card p, .card li {
+      color: #bbb;
+    }
+    body.light .card p, body.light .card li {
+      color: #666;
+    }
+    .bg-dark-section {
+      background: #151515;
+    }
+    body.light .bg-dark-section {
+      background: #f0f0f0;
+    }
+    
+    /* Dark mode form styles */
+    .form-control, .form-select {
+      background: #2a2a2a;
+      color: #eee;
+      border: 1px solid #444;
+    }
+    .form-control::placeholder {
+      color: #999;
+    }
+    .form-control:focus, .form-select:focus {
+      background: #2a2a2a;
+      color: #eee;
+      border-color: var(--neon-blue);
+      box-shadow: 0 0 10px rgba(var(--neon-blue-rgb), 0.5);
+    }
+    .form-label {
+      color: #eee;
+    }
+    body.light .form-label {
+      color: #333;
+    }
+    
+    /* Light mode form styles */
+    body.light .form-control, body.light .form-select {
+      background: #fff;
+      color: #333;
+      border: 1px solid #ccc;
+    }
+    body.light .form-control::placeholder {
+      color: #999;
+    }
+    body.light .form-control:focus, body.light .form-select:focus {
+      background: #fff;
+      color: #333;
+    }
+
+    /* Success message */
+    .success-message {
+      display: none;
+      animation: slideIn 0.5s ease;
+    }
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Footer */
+    footer {
+      background: #000;
+      border-top: 1px solid #333;
+    }
+    
+    .social-icons a {
+      color: var(--neon-blue);
+      font-size: 1.5rem;
+      margin: 0 10px;
+      transition: all 0.3s ease;
+    }
+    .social-icons a:hover {
+      color: #fff;
+      transform: translateY(-3px);
+    }
